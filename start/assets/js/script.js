@@ -26,12 +26,12 @@ console.log(`${NAME} ${SURNAME}`);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let a = 10;
 let b = 3;
-console.log(a+b); /* somma */
-console.log(a-b); /* differenza */
-console.log(a*b); /* prodotto */
-console.log(a/b); /* divisione */
-console.log(a%b); /* resto */
-console.log(a**b); /* elevato */
+console.log(`${a}+${b} = ${a+b}`); /* somma */
+console.log(`${a}-${b} = ${a-b}`); /* differenza */
+console.log(`${a}*${b} = ${a*b}`); /* prodotto */
+console.log(`${a}/${b} = ${a/b}`); /* divisione */
+console.log(`${a}%${b} = ${a%b}`); /* resto */
+console.log(`${a}**${b} = ${a**b}`); /* elevato */
 
 /* ESERCIZIO 3 — Età nel tempo
    const annoNascita (scegli un anno).
