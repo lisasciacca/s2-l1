@@ -26,12 +26,12 @@ console.log(`${NAME} ${SURNAME}`);
 /* SCRIVI QUI LA TUA RISPOSTA */
 let a = 10;
 let b = 3;
-console.log(`${a}+${b} = ${a+b}`); /* somma */
-console.log(`${a}-${b} = ${a-b}`); /* differenza */
-console.log(`${a}*${b} = ${a*b}`); /* prodotto */
-console.log(`${a}/${b} = ${a/b}`); /* divisione */
-console.log(`${a}%${b} = ${a%b}`); /* resto */
-console.log(`${a}**${b} = ${a**b}`); /* elevato */
+console.log(`${a}+${b} = ${a + b}`); /* somma */
+console.log(`${a}-${b} = ${a - b}`); /* differenza */
+console.log(`${a}*${b} = ${a * b}`); /* prodotto */
+console.log(`${a}/${b} = ${a / b}`); /* divisione */
+console.log(`${a}%${b} = ${a % b}`); /* resto */
+console.log(`${a}**${b} = ${a ** b}`); /* elevato */
 
 /* ESERCIZIO 3 — Età nel tempo
    const annoNascita (scegli un anno).
@@ -43,9 +43,9 @@ console.log(`${a}**${b} = ${a**b}`); /* elevato */
 /* SCRIVI QUI LA TUA RISPOSTA */
 const annoNascita = 1995;
 const annoCorrente = 2026;
-console.log(annoCorrente-annoNascita); /*età oggi*/
-console.log(annoCorrente-annoNascita+10); /*età oggi*/
-console.log(annoCorrente-annoNascita-5); /*età oggi*/
+console.log(`Oggi hai ${annoCorrente - annoNascita}`); /*età oggi*/
+console.log(`Tra 10 anni avrai ${(annoCorrente - annoNascita) + 10}`); /*età tra 10 anni*/
+console.log(`Cinque anni fa avevi ${(annoCorrente - annoNascita) - 5}`); /*età 5 anni fa*/
 
 /* ESERCIZIO 4 — Maggiorenne?
    Variabile "eta".
@@ -54,8 +54,9 @@ console.log(annoCorrente-annoNascita-5); /*età oggi*/
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let eta = 25;
-let maggiorenne = eta >=18;
+let eta;
+eta = 25;
+let maggiorenne = eta >= 18;
 console.log(`Età:  ${eta} - Maggiorenne:  ${maggiorenne}`);
 
 /* ESERCIZIO 5 — Tipo del valore
@@ -105,10 +106,10 @@ console.log(numero === stringa);
    - true + 1                 2
    - "10" * "2" */            20
 
-   console.log("5"+3);
-   console.log("5"-3);
-   console.log(true+1);
-   console.log("10" * "2");
+console.log("5" + 3);
+console.log("5" - 3);
+console.log(true + 1);
+console.log("10" * "2");
 
 /* ESERCIZIO 8 — Classificazione numero
    Variabile "n".
@@ -119,7 +120,8 @@ console.log(numero === stringa);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let n = 12;
+let n 
+n = 12;
 let pari = n % 2 === 0;
 console.log(`${n} è pari: ${pari}`);
 
@@ -136,13 +138,13 @@ console.log(`${n} è pari E divisibile per 3: ${divi3 === pari}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let x = 15;
-let y = 15;
-let z = 15;
-let perimetro = x+y+z;
+const x = 15;
+const y = 15;
+const z = 15;
+let perimetro = x + y + z;
 let tipo;
-if (x === y && y === z){tipo="equilatero"}
-else if (x === y || x === z || y === z){tipo="isoscele"}
-else {tipo="scaleno"};
+if (x === y && y === z) { tipo = "equilatero" }
+else if (x === y || x === z || y === z) { tipo = "isoscele" }
+else { tipo = "scaleno" };
 
 console.log(`Triangolo ${tipo} perimetro ${perimetro}`);
